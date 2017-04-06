@@ -8,7 +8,9 @@ import {
 } from 'react-native';
 
 import ActionSheet from '@exponent/react-native-action-sheet';
-import moment from 'moment/min/moment-with-locales.min';
+import moment from 'moment';
+var esLocale = require('moment/locale/tr');
+moment.locale('tr', esLocale);
 import uuid from 'uuid';
 
 import * as utils from './utils';
